@@ -8,3 +8,6 @@ Creación de la carpeta API, los ficheros autores y posts y de la ruta /api.
 
 # 05/05/2023 - 10:40
 Creación de las peticiones GET de ambos ficheros.
+
+# 05/05/2023 - 10:45
+Creación de la conexión con la bbdd.
