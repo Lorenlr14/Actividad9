@@ -1,6 +1,32 @@
 @host = http://localhost:3000
 
+### PETICIONES DE AUTORES
 GET {{host}}/api/autores
 
 ###
+POST {{host}}/api/autores
+Content-Type: application/json
+
+{
+    "nombre": "Pedro Subiela Luzarraga",
+    "email": "pedro_sl@gmail.com",
+    "imagen": ""
+}
+
+### PETICIONES DE POSTS
 GET {{host}}/api/posts
+
+###
+POST {{host}}/api/posts
+Content-Type: application/json
+
+{
+    "titulo": "El discurso del odio, incendio arrasador",
+    "descripcion": "Por doquier, una amenazante oleada de intolerancia y de violencia impulsada por el odio se cierne contra los fieles de muchas religiones. Ciertos incidentes atroces están cobrando una lamentable e inquietante frecuencia.",
+    "fecha_creacion": "2019-06-18",
+    "categoria": "Violencia",
+    "autores_id": 2
+}
+
+###
+GET {{host}}/api/posts/1
